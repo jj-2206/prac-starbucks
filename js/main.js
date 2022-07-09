@@ -35,6 +35,7 @@ window.addEventListener(
     }
   }, 300)
 );
+
 // lodash 라이브러리의 throttle 기능, 300 = 0.3초
 // _.throttle(함수, 시간)
 // gsap 라이브러리 animation
