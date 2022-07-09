@@ -40,3 +40,11 @@ window.addEventListener(
 // _.throttle(함수, 시간)
 // gsap 라이브러리 animation
 // gsap.to(요소, 지속시간, 옵션{});
+
+const fadeEls = document.querySelectorAll('.visual .fade-in');
+fadeEls.forEach(function (fadeEl, index) {
+  gsap.to(fadeEl, 1, {
+    delay: (index + 1) * 0.7, // 0.7s 1.4s 2.1s 2.7s 순차적
+    opacity: 1,
+  });
+});
